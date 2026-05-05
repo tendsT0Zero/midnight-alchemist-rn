@@ -2,8 +2,6 @@ import { useQueryClient } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { resetUser } from "../redux/slices/authSlice";
-import { useAppSelector } from "../redux/store";
 
 const axiosPrivate = axios.create({
   baseURL: process.env.EXPO_PUBLIC_API_URL,

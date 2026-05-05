@@ -7,8 +7,8 @@ type Props = {
 
 const BoxContainer = ({ children, title }: Props) => {
   return (
-    <View className="p-4 bg-mattBlack rounded-xl flex-col gap-4 border border-frostedBg">
-      <Text className="text-white text-[18px] font-bold mb-2">{title}</Text>
+    <View className="px-4 py-2 bg-mattBlack rounded-xl flex-col border border-frostedBg">
+      <Text className="text-white text-[16px] font-primarySemibold mb-4">{title}</Text>
       {children}
     </View>
   );
