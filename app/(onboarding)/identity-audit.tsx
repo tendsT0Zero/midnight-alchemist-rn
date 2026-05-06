@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View, ScrollView, Pressable, ActivityIndicator, TouchableOpacity } from 'react-native';
+import { Text, View,Pressable, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { useForm, FieldValues, SubmitHandler } from 'react-hook-form';
 import { FontAwesome6 } from "@expo/vector-icons";
 import HeaderText from "../../components/common/HeaderText"; 
@@ -42,6 +42,8 @@ const IdentityAudit = () => {
       reset();
       setSelectedTransition(null);
     }, 1500);
+    // navigate to next step or dashboard after successful submission
+    navigation.navigate("(onboarding)/voice-clone");
   };
 
   return (
